@@ -1,0 +1,37 @@
+.review{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top:5%;
+    color:#2d3934;
+    border: .5px solid #B6C8A9;
+    border-radius: 20px;
+    box-shadow: #B6C8A9 5px 5px 0px 0px;
+    padding:5%;
+
+}
+.review img{
+    max-width: 150px;
+    max-height: fit-content;
+    border: .5px solid #8d8d8d;
+    border-radius: 10px;
+    opacity: 0.95;
+    margin-right: 20px;
+}
+
+.tags{
+    display:flex;
+    flex-direction:row;
+}
+
+.basicInfo{
+    display:flex;
+    flex-direction:row;
+
+}
+
+.reviewInfo{
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+
+}

@@ -1,0 +1,67 @@
+.navbar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #232a25;
+  background-color: white;
+  box-shadow:#B6C8A9 5px -2px 10px 0px;
+  width:100%;
+  border: .5px solid #B6C8A9; 
+
+}
+
+.navbar a{
+  color:#232a25
+}
+.brand{
+  margin-left: 2em;
+  font-size:1.2em;
+  color:#495b52;
+  align-items: center;
+  display:flex;
+
+
+}
+
+.brand span{
+  font-weight: 900;
+}
+
+.brand p {
+  color:#495b52;
+}
+.logo{
+  max-width: 2.5em;
+  
+}
+
+.links_list{
+  color: #232a25;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  list-style: none; /*tira o  bullet points*/
+
+}
+
+.links_list li{
+  display:block;
+
+}
+
+.links_list li a {
+  display:block;
+  padding: 1.5em;
+  margin-right: 1em;
+  color: #232a25;
+}
+/*link quando estiver ativo*/
+.active{
+  background-color: #B6C8A9;
+  color:white;
+}
+
+
+
+
+

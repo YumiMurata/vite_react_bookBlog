@@ -1,0 +1,12 @@
+.search{
+    margin-top:5%;
+    margin-left:5%;
+    width: 80%;
+
+}
+
+.search_results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}

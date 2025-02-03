@@ -1,0 +1,80 @@
+.post_detail {
+    margin-bottom: 2em;
+    background-color: white ;
+    box-shadow: #B6C8A9 2px 2px 0px 0px;
+    /*border: .5px solid #8d8d8d;*/
+    border-radius: 20px;
+    padding:2%;
+    border: .5px solid #B6C8A9;
+  
+  
+}
+
+.post_detail h2{
+color: #2d3934;
+font-size: 20px;
+}
+
+.post_detail h3{
+color: #2d3934;
+font-size: 15px;
+margin-left:0px
+}
+
+.reviewPreview{
+margin-left:10px;
+margin-top:0px;
+max-height: 150px; /* Adjust as needed */
+overflow: hidden;
+text-overflow: ellipsis;
+-webkit-line-clamp: 2; /* Number of lines before truncating */
+-webkit-box-orient: vertical;
+white-space: normal;
+}
+
+.row{
+display:flex;
+flex-direction:row;
+align-items: flex-start;
+}
+
+.post_detail img {
+max-width: 100px;
+max-height: fit-content;
+border: .5px solid #8d8d8d;
+border-radius: 10px;
+opacity: 0.95;
+}
+
+.post_detail h2 {
+margin-bottom: 0.2em;
+}
+
+.post_detail .tags {
+margin-bottom: 0.2em;
+display: flex;
+}
+
+.tags p {
+margin-right: 0.5em;
+}
+
+.tags span {
+font-weight: bold;
+}
+
+.createdby {
+font-style: italic;
+color: #444;
+font-size: 0.8em;
+margin-bottom: 1em;
+}
+
+.buttons{
+display:flex;
+flex-direction:row;
+justify-content: space-between; /* Adds space between buttons */
+width:40%;
+height:80px;
+}
+

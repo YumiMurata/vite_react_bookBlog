@@ -1,0 +1,31 @@
+.App{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  margin-bottom: 5em;
+  width: 100%; /* Ensure it takes the full width */
+  height: 100%; 
+}
+
+
+h1, p {
+  font-family: "Archivo", serif;
+  color:#2d3934;
+  font-optical-sizing: auto;
+  font-weight: light;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+h2{
+  color:#2d3934;
+
+}
+

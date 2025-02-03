@@ -1,0 +1,23 @@
+.h3{
+    color:black;
+}
+
+.editableTitle{
+    color:#2d3934;
+}
+.editable{
+    color:#232a25;
+    border: .5px solid #CCCCCC;
+    border-radius: 5px;
+    font-family: "Archivo", serif;
+    width: 600px;
+    height: fit-content;
+    padding: 10px;            /* Add some padding for spacing */
+    overflow-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    word-wrap: break-word;    /* Old syntax for word wrapping */
+    white-space: pre-wrap;    /* Preserve whitespace and allow wrapping */
+    overflow: auto;           /* Add scrollbars if content overflows */
+    max-width: 100%;          /* Ensure the element does not overflow horizontally */
+    box-sizing: border-box;
+
+}
