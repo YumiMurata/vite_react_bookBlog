@@ -20,3 +20,18 @@
     margin-top:15px;
     padding:10px 15px;
 }
+
+@media (max-width: 768px) {
+    .aboutBox{
+        background-color: #f2cc8f  ;
+        background-color: white ;
+        padding:5%;
+        border-radius: 20px;
+        box-shadow: #B6C8A9 5px 5px 0px 0px;
+        margin-left:10%;
+        margin-top:5%;
+        margin-right: 10%;
+        border: .5px solid #333;
+    
+    }
+}
