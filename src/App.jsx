@@ -58,6 +58,7 @@ function App() {
           <div className="container">
             <Routes>
               <Route path="/" element={<Home/>}/>
+              <Route path="/vite_react_bookBlog/" element={<Home/>}/>
               <Route path="/home" element={<Home/>}/>
               <Route path="/about" element={<About/>}/>
               <Route path="/search" element={<Search/>}/>
