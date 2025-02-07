@@ -56,7 +56,7 @@ const Login = () => {
             </label>
 
             <label htmlFor="">
-              <span>Senha:</span>
+              <span>Password:</span>
               <input type="password" 
               name="password" 
               required 
@@ -67,7 +67,7 @@ const Login = () => {
 
 
             {!loading && <button className="btn">Login</button>}
-            {loading && <button className="btn" disabled>Aguarde...</button>}
+            {loading && <button className="btn" disabled>Loading...</button>}
             {error && <p className="error">{error}</p>}
 
           </form>
