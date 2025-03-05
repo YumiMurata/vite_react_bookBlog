@@ -12,6 +12,7 @@ const CreatePost = () => {
   const[image,setImage]=useState("")
   const[body,setBody]=useState("")
   const[tags,setTags]=useState("")
+  const[status,setStatus]=useState("")
   const[formError,setFormError]=useState("")
 
   const {insertDocument, response} = useInsertDocument("posts")
@@ -47,7 +48,8 @@ const CreatePost = () => {
     insertDocument({
       bookTitle, 
       image,
-      author, 
+      author,
+      status, 
       body, 
       tagsArray, 
       uid:user.uid, 
@@ -91,6 +93,16 @@ const CreatePost = () => {
           onChange={(e)=>setAuthor(e.target.value)}
           value={author}
           />
+        </label>
+
+        <label htmlFor="book-status">
+        <span>Status</span>
+          <select id="book-status" name="status" required onChange={(e)=>setStatus(e.target.value)}>
+            <option value="">Select Status</option>
+            <option value="Read">Read</option>
+            <option value="Reading">Reading</option>
+            <option value="Want to Read">Want to Read</option>
+          </select>
         </label>
         <label>
           <span>URL</span>

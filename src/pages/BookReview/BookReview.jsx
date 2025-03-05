@@ -16,6 +16,7 @@ const BookReview = () => {
               <img src={bookReview.image} alt="" />
               <div className={styles.reviewInfo}>
                 <h2>{bookReview.bookTitle}</h2>
+                <p><b>Status:</b>{bookReview.status}</p>
                 <p><b>Author:</b>{bookReview.author}</p>
                 <p> <b>Review by </b>{bookReview.createdBy}</p>
               </div>

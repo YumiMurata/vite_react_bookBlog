@@ -18,12 +18,12 @@ const EditPost = () => {
     const [image, setImage] = useState("");
     const [body, setBody] = useState("");
     const [tags, setTags] = useState("");
+    const [status, setStatus] = useState("");
     const [formError, setFormError] = useState("");
 
     const { updateDocument, response } = useUpdateDocument("posts");
     const navigate = useNavigate();
 
-    const contentRef = useRef(null);
     const bodyRef = useRef(body);
 
     // Populate the fields when post is available
@@ -31,6 +31,8 @@ const EditPost = () => {
         if (post) {
             setBookTitle(post.bookTitle || "");
             setAuthor(post.author || "");
+            setStatus(post.status || "");
+            console.log("STATUS OF POST", post.status)
             setImage(post.image || "");
             setBody(post.body || "");
             setTags(post.tagsArray ? post.tagsArray.join(", ") : "");
@@ -66,7 +68,8 @@ const EditPost = () => {
             bookTitle,
             author,
             image,
-            body: bodyRef.current,
+            status,
+            body,
             tagsArray,
             uid: user.uid,
             createdBy: user.displayName
@@ -127,7 +130,16 @@ const EditPost = () => {
                         value={image}
                     />
                 </label>  
-
+                
+                <label htmlFor="book-status">
+                    <span>Status</span>
+                <select id="book-status" name="status" value={status} onChange={(e)=>setStatus(e.target.value)}>
+                    <option value="">Select Status</option>
+                    <option value="Read">Read</option>
+                    <option value="Reading">Reading</option>
+                    <option value="Want to Read">Want to Read</option>
+                </select>
+                </label>
                  
 
 
@@ -153,7 +165,8 @@ const EditPost = () => {
                 {response.loading && <button className="btn" disabled>Wait...</button>}
                 {response.error && <p className="error">{response.error}</p>}
                 {formError && <p className="error">{formError}</p>}
-                {console.log("BODY NBEING SENT",body)}
+                
+
             </form>
 
         </div>

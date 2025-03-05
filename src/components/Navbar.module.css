@@ -41,6 +41,18 @@
   color: #232a25;
   text-decoration: none;
 }
+.logout {
+  display: block;
+}
+
+.logout {
+  display: block;
+  padding: 1.5em;
+  margin-right: 1em;
+  color: #232a25;
+  text-decoration: none;
+}
+
 
 /* Active link */
 .active {

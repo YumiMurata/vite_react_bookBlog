@@ -76,7 +76,7 @@ const Navbar = () => {
 
         {user && (
           <li>
-            <button onClick={() => { logout(); closeMenu(); }}>Log Out</button>
+            <button className={styles.logout} onClick={() => { logout(); closeMenu(); }}>Log Out</button>
           </li>
         )}
       </ul>
